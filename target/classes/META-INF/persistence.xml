@@ -1,0 +1,48 @@
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
+             http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd"
+	version="2.1">
+
+	<!-- MYSQL -->
+	<!-- <persistence-unit name="PERSISTENCE"> <description> Ejemplo Crud básico 
+		Hibernate JPA</description> <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider> 
+		<properties> <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver" 
+		/> <property name="javax.persistence.jdbc.url" value="jdbc:mysql://3.134.98.232/BDDespachoGasolinera" 
+		/> <property name="javax.persistence.jdbc.user" value="applogin" /> <property 
+		name="javax.persistence.jdbc.password" value="Bitec042018" /> <property name="hibernate.show_sql" 
+		value="true" /> <property name="hibernate.hbm2ddl.auto" value="update" /> 
+		</properties> </persistence-unit> -->
+
+
+	<!-- ORACLE -->
+	<!-- <persistence-unit name="PERSISTENCE"> <description>Ejemplo Crud básico 
+		Hibernate JPA</description> <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider> 
+		<properties> <property name="javax.persistence.jdbc.driver" value="oracle.jdbc.OracleDriver" 
+		/> <property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@localhost:1521:XE" 
+		/> <property name="javax.persistence.jdbc.user" value="username" /> <property 
+		name="javax.persistence.jdbc.password" value="password" /> <property name="hibernate.show_sql" 
+		value="true" /> <property name="hibernate.hbm2ddl.auto" value="update" /> 
+		</properties> </persistence-unit> -->
+
+
+	<!-- SQL -->
+	<persistence-unit name="PERSISTENCE">
+		<description>Ejemplo Crud básico Hibernate JPA</description>
+		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
+		<properties>
+			<property name="javax.persistence.jdbc.driver"
+				value="com.microsoft.sqlserver.jdbc.SQLServerDriver" />
+			<property name="javax.persistence.jdbc.url"
+				value="jdbc:sqlserver://3.134.98.232;databaseName=BDDespachoGasolinera" />
+			<property name="javax.persistence.jdbc.user"
+				value="applogin" />
+			<property name="javax.persistence.jdbc.password"
+				value="Bitec042018" />
+			<property name="hibernate.show_sql" value="true" />
+			<property name="hibernate.hbm2ddl.auto" value="update" />
+		</properties>
+	</persistence-unit>
+
+</persistence>
